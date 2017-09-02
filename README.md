@@ -11,7 +11,6 @@ Dropbox link:
 
 [soon]
 
-
 ## Add to your libraries:
 
 ![Sketch App Libraries](./assets/libraries-sketchapp.png)
