@@ -1,12 +1,12 @@
-# %%NAME%%
+# anotherplanet.io-ux-template
 
 Sitemap Sketch Libraries for ux designer.
 
-Work in progress. Version %%VERSION%%
+Work in progress. Version 1.0.0-beta1
 
 Dropbox link:
 
-[%%DROPBOXLINK%%](%%DROPBOXLINK%%)
+[https://db.tt/fkEQpxd8Bj](https://db.tt/fkEQpxd8Bj)
 
 ## Add to your libraries:
 

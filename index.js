@@ -4,7 +4,7 @@ import minimist from 'minimist'
 import prompt from 'prompt'
 import keychain from 'keychain'
 import Dropbox from 'dropbox'
-import {NAME, VERSION} from './package.json';
+import {name, version} from './package.json';
 
 const argv = minimist(process.argv.slice(2))
 console.dir(argv)
@@ -102,10 +102,10 @@ function generateReadme(data) {
     if (err) {
       console.log('Error: ', err);
     }
-    let result
-    result = data.replace(/%%VERSION%%/g, VERSION);
-    result = data.replace(/%%NAME%%/g, NAME);
-    result = data.replace(/%%DROPBOXLINK%%/g, DROPBOXLINK);
+    let result = contents
+    result = result.replace(/%%VERSION%%/g, version);
+    result = result.replace(/%%NAME%%/g, name);
+    result = result.replace(/%%DROPBOXLINK%%/g, DROPBOXLINK);
 
     fs.writeFile(path.join(__dirname, '/README.md'), result, 'utf8', function (err) {
        if (err) return console.log(err);
