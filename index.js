@@ -75,7 +75,7 @@ function uploadFile(accessToken) {
       console.log('Error: ', err);
     }
     // This uploads basic.js to the root of your dropbox
-    dbx.filesUpload({ path: '/anotherplanet.io-ux.sketch', contents: contents })
+    dbx.filesUpload({ path: '/anotherplanet.io-ux.sketch', contents: contents, mode: { '.tag': 'overwrite' } })
       .then(function (response) {
         console.log(response)
         console.log(appPath + response.path_display)
