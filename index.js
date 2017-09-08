@@ -4,7 +4,7 @@ import minimist from 'minimist'
 import prompt from 'prompt'
 import keychain from 'keychain'
 import Dropbox from 'dropbox'
-import {name, version} from './package.json';
+import {NAME, VERSION} from './package.json';
 
 const argv = minimist(process.argv.slice(2))
 console.dir(argv)
@@ -83,6 +83,9 @@ function uploadFile(accessToken) {
         .then(function (response) {
           console.log(response)
           console.log(response.url)
+          generateReadme({
+            DROPBOXLINK: response.url
+          })
         }).catch(function(err) {
           console.log(err);
         })
@@ -90,5 +93,22 @@ function uploadFile(accessToken) {
       .catch(function (err) {
         console.log(err);
       });
+  });
+}
+
+function generateReadme(data) {
+  const { DROPBOXLINK } = data
+  fs.readFile(path.join(__dirname, '/README.template.md'), 'utf8', function (err, contents) {
+    if (err) {
+      console.log('Error: ', err);
+    }
+    let result
+    result = data.replace(/%%VERSION%%/g, VERSION);
+    result = data.replace(/%%NAME%%/g, NAME);
+    result = data.replace(/%%DROPBOXLINK%%/g, DROPBOXLINK);
+
+    fs.writeFile(path.join(__dirname, '/README.md'), result, 'utf8', function (err) {
+       if (err) return console.log(err);
+    });
   });
 }
