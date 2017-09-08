@@ -1,10 +1,10 @@
 # %%NAME%%
 
-Sitemap Sketch Libraries for ux designer.
+Sitemap Sketch Libraries for ux designers.
 
 Work in progress. Version %%VERSION%%
 
-Dropbox link:
+## Dropbox link:
 
 [%%DROPBOXLINK%%](%%DROPBOXLINK%%)
 
@@ -28,4 +28,6 @@ Dropbox link:
 
 ## TODO
 
-Create a link for google drive
+- Create a link for Google Drive
+- Create automatic preview for the library.
+- Export symbols preview
