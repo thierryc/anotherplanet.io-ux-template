@@ -98,7 +98,7 @@ function uploadFile(accessToken) {
 
 function generateReadme(data) {
   const { DROPBOXLINK } = data
-  fs.readFile(path.join(__dirname, '/README.template.md'), 'utf8', function (err, contents) {
+  fs.readFile(path.join(__dirname, '/_README.template.md'), 'utf8', function (err, contents) {
     if (err) {
       console.log('Error: ', err);
     }
