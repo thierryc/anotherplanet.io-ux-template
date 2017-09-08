@@ -4,6 +4,7 @@
   "description": "Sketch Template Library for UX Workflow",
   "main": "index.js",
   "scripts": {
+    "help": "echo \"babel-node index.js drpboxemail@gmail.com\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,6 +24,10 @@
   },
   "homepage": "https://github.com/thierryc/anotherplanet.io-ux-template#readme",
   "devDependencies": {
-    "dropbox": "^2.5.7"
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "dropbox": "^2.5.7",
+    "keychain": "^1.3.0",
+    "prompt": "^1.0.0"
   }
 }

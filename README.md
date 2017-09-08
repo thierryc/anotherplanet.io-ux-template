@@ -3,13 +3,10 @@ Sitemap Sketch Libraries for ux designer.
 
 Work in progress. Version 1.0.0-beta1
 
-Google Drive link:
-
-[soon]
-
 Dropbox link:
 
-[soon]
+https://db.tt/fkEQpxd8Bj
+
 
 ## Add to your libraries:
 
@@ -28,3 +25,5 @@ Dropbox link:
 ### Stroke Template
 
 ![Stroke Template Background](./assets/ux-stroke-color-background.png)
+
+## TODO
