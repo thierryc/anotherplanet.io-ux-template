@@ -33,6 +33,9 @@
     "prompt": "^1.0.0"
   },
   "dependencies": {
-    "googleapis": "^22.2.0"
+    "googleapis": "^22.2.0",
+    "next": "^4.0.3",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
   }
 }

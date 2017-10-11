@@ -71,13 +71,14 @@ function run() {
 
 function uploadFile(accessToken) {
   const dbx = new Dropbox({ accessToken: accessToken });
-  fs.readFile(path.join(__dirname, '/anotherplanet.io-ux.sketch'), 'utf8', function (err, contents) {
+  fs.readFile(path.join(__dirname, './anotherplanet.io-ux.sketch'), function (err, contents) {
     if (err) {
       console.log('Error: ', err);
     }
     // This uploads file into your dropbox
-    dbx.filesUpload({ path: '/anotherplanet.io-ux.sketch', contents: contents, mode: { '.tag': 'overwrite' } })
+    dbx.filesUpload({ path: '/ap-sktech-libs/anotherplanet.io-ux.sketch', contents: contents, mode: { '.tag': 'overwrite' } })
       .then(function (response) {
+        console.log('-------')
         console.log(response)
         console.log(appPath + response.path_display)
         const sharedLink = dbx.sharingCreateSharedLink({path: response.path_display, short_url: true})

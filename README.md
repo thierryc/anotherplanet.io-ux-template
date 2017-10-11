@@ -6,7 +6,9 @@ Work in progress. Version 1.0.0-beta1
 
 ## Dropbox link:
 
-[https://db.tt/LbpGZ8u91j](https://db.tt/LbpGZ8u91j)
+[https://db.tt/EnDJsJPCB1](https://db.tt/EnDJsJPCB1)
+
+[Libs Folder](https://www.dropbox.com/sh/wxtkm4dfyl5dmwa/AAADfPXxCWib8pJdLwdigeuZa?dl=0)
 
 ## Add to your libraries:
 

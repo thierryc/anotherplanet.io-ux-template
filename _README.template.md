@@ -8,6 +8,8 @@ Work in progress. Version %%VERSION%%
 
 [%%DROPBOXLINK%%](%%DROPBOXLINK%%)
 
+[Libs Folder](https://www.dropbox.com/sh/wxtkm4dfyl5dmwa/AAADfPXxCWib8pJdLwdigeuZa?dl=0)
+
 ## Add to your libraries:
 
 ![Sketch App Libraries](./assets/libraries-sketchapp.png)
