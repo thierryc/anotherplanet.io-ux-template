@@ -10,6 +10,8 @@ Work in progress. Version %%VERSION%%
 
 [Libs Folder](https://www.dropbox.com/sh/wxtkm4dfyl5dmwa/AAADfPXxCWib8pJdLwdigeuZa?dl=0)
 
+[Google Drive](https://drive.google.com/drive/folders/0B-VAFp96WBFgc1R5OHM4VV8xSG8?usp=sharing)
+
 ## Add to your libraries:
 
 ![Sketch App Libraries](./assets/libraries-sketchapp.png)

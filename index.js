@@ -71,6 +71,7 @@ function run() {
 
 function uploadFile(accessToken) {
   const dbx = new Dropbox({ accessToken: accessToken });
+  fs.createReadStream(path.join(__dirname, './anotherplanet.io-ux.sketch')).pipe(fs.createWriteStream('../../Google Drive/ap-sktech-libs/anotherplanet.io-ux.sketch'));
   fs.readFile(path.join(__dirname, './anotherplanet.io-ux.sketch'), function (err, contents) {
     if (err) {
       console.log('Error: ', err);
