@@ -4,6 +4,7 @@ import minimist from 'minimist'
 import prompt from 'prompt'
 import keychain from 'keychain'
 import Dropbox from 'dropbox'
+// import google from 'googleapis'
 import {name, version} from './package.json';
 
 const argv = minimist(process.argv.slice(2))
@@ -63,18 +64,18 @@ function run() {
     if (!err) {
       return uploadFile(token)
     }
-    init()
+    init() // first use initialisation
   })
+
 }
 
 function uploadFile(accessToken) {
-  console.log(accessToken);
   const dbx = new Dropbox({ accessToken: accessToken });
   fs.readFile(path.join(__dirname, '/anotherplanet.io-ux.sketch'), 'utf8', function (err, contents) {
     if (err) {
       console.log('Error: ', err);
     }
-    // This uploads basic.js to the root of your dropbox
+    // This uploads file into your dropbox
     dbx.filesUpload({ path: '/anotherplanet.io-ux.sketch', contents: contents, mode: { '.tag': 'overwrite' } })
       .then(function (response) {
         console.log(response)
