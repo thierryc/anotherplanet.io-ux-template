@@ -4,6 +4,12 @@ Sitemap Sketch Libraries for ux designers.
 
 Work in progress. Version %%VERSION%%
 
+## Features
+
+Device agnostic
+
+Arrows (responsive)
+
 ## Google Drive link:
 
 [Google Drive Folder](https://drive.google.com/drive/folders/0B-VAFp96WBFgc1R5OHM4VV8xSG8?usp=sharing)

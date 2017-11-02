@@ -6,7 +6,7 @@
   "scripts": {
     "build": "babel-node index.js",
     "help": "echo \"babel-node index.js drpboxemail@gmail.com\"",
-    "deploy": "git add out/ && git commit -m \"Deploy gh-pages\" && git subtree push --prefix out origin gh-pages",
+    "deploy": "cp anotherplanet.io-ux.sketch out/static/ && git add anotherplanet.io-ux.sketch && git add out/ && git commit -m \"Deploy gh-pages\" && git subtree push --prefix out origin gh-pages",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
