@@ -40,6 +40,5 @@ Arrows (responsive)
 
 ## TODO
 
-- Create a link for Google Drive
 - Create automatic preview for the library.
 - Export symbols preview
