@@ -5,10 +5,11 @@
   "main": "index.js",
   "scripts": {
     "build": "babel-node index.js",
-    "buildNext": "next build",
+    "site": "next build",
+    "export": "next export",
     "help": "echo \"babel-node index.js drpboxemail@gmail.com\"",
     "dev": "next",
-    "deploy": "next build && next export && cp anotherplanet.io-ux.sketch out/static/ && git add anotherplanet.io-ux.sketch && git add out/ && git commit -m \"Deploy gh-pages\" && git subtree push --prefix out origin gh-pages",
+    "deploy": "next build && next export && cp anotherplanet.io-ux.sketch static/ && git add out/ && git commit -m \"Deploy gh-pages\" && git subtree push --prefix out origin gh-pages",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

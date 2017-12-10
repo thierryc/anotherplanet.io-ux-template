@@ -17,3 +17,6 @@ git subtree push --prefix out origin gh-pages
 ## Next Deploy Command
 
 next build && next export && git add out/ && git commit -m \"Deploy gh-pages\" && git subtree push --prefix out origin gh-pages
+
+
+next build && next export && 
