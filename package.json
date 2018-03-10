@@ -29,17 +29,17 @@
   },
   "homepage": "https://github.com/thierryc/anotherplanet.io-ux-template#readme",
   "devDependencies": {
-    "animate.css": "^3.5.2",
+    "animate.css": "^3.6.1",
     "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.6.0",
-    "dropbox": "^2.5.7",
+    "babel-preset-env": "^1.6.1",
+    "dropbox": "^2.5.13",
     "keychain": "^1.3.0",
     "prompt": "^1.0.0"
   },
   "dependencies": {
     "googleapis": "^22.2.0",
-    "next": "^4.0.3",
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0"
+    "next": "^4.2.3",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
   }
 }
